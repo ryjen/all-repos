@@ -209,6 +209,52 @@ output/
 +--- {repo_key3}/
 ```
 
+### `all_repos.source.multi`
+
+Clones all repositories listed for each source in settings.  The file must be formatted as
+follows:
+
+```json
+{
+   "source": "all_repos.source.multi",
+   "source_settings": {
+      "sources": [
+        {
+          "source": "all_repos.source.github_org",
+          "settings": {
+            "org": "..."
+          }
+        },
+        {
+          "source": "all_repos.source.github",
+          "settings": {
+            "username": "..."
+          }
+        }
+      ],
+      "shared_settings": {
+        "api_key": "...",
+        "archived": true
+      }
+   }
+}
+```
+
+#### Required `source_settings`
+
+- `sources`: file containing repositories one-per-line.
+
+#### Directory location
+
+```
+output/
++--- repos.json
++--- repos_filtered.json
++--- {repo_key1}/
++--- {repo_key2}/
++--- {repo_key3}/
+```
+
 ### `all_repos.source.github`
 
 Clones all repositories available to a user on github.
