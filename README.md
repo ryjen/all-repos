@@ -414,6 +414,38 @@ output/
     +--- {repo4}/
 ```
 
+### `all_repos.source.gitlab`
+
+Clones all repositories from an user on gitlab.
+
+#### Required `source_settings`
+
+- `api_key`: the api key which the user will log in as.
+    - Use the settings tab (eg https://{gitlab.domain.com}/-/profile/personal_access_tokens) to create a
+      personal access token.
+    - We need the scope: `read_api`, `read_repository`.
+- `api_key_env`: alternatively API key can also be passed via an environment variable
+- `username`: the user to clone from
+
+#### Optional `source_settings`
+
+- `base_url`: (default `https://gitlab.com/api/v4`) the gitlab server URL
+- `archived` (default: `false`): whether to include archived repositories.
+
+#### Directory location
+
+```
+output/
++--- repos.json
++--- repos_filtered.json
++--- {username}/
+    +--- {subpgroup1}/
+        +--- {subpgroup2}/
+            +--- {repo1}/
+        +--- {repo2}/
+    +--- {repo3}/
+    +--- {repo4}/
+```
 
 ## Writing your own source
 
