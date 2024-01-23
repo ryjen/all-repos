@@ -1,0 +1,79 @@
+repo_name: ryjen/all-repos
+report_id: 487ab2458745cf1bc60c2306d295648c
+version: 0.1
+repo_type: Public
+timestamp: '2024-01-23T22:17:00+00:00'
+requested_by: pre-commit-ci[bot]
+provider: github
+branch: main
+detected_tools_count: 6
+tools:
+- name: Python
+  description: A clear and powerful object-oriented programming language, comparable
+    to Perl, Ruby, Scheme, or Java.
+  website_url: https://www.python.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/ryjen/all-repos
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/ryjen/all-repos
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source_url: https://github.com/ryjen/all-repos/blob/main/.github/workflows/main.yml
+  detection_source: ".github/workflows/main.yml"
+  last_updated_by: Anthony Sottile
+  last_updated_on: 2022-12-29 21:03:03.000000000 Z
+- name: pre-commit
+  description: A slightly improved pre-commit hook for git
+  website_url: http://jish.github.io/pre-commit/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Git Tools
+  image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source_url: https://github.com/ryjen/all-repos/blob/main/requirements-dev.txt
+  detection_source: requirements-dev.txt
+  last_updated_by: Anthony Sottile
+  last_updated_on: 2017-08-02 17:36:37.000000000 Z
+- name: pytest
+  description: A full-featured Python testing tool to help you write better programs
+  website_url: http://pytest.org/latest/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Testing Frameworks
+  image_url: https://img.stackshare.io/service/4586/Lu99Qe0Z_400x400.png
+  detection_source_url: https://github.com/ryjen/all-repos/blob/main/requirements-dev.txt
+  detection_source: requirements-dev.txt
+  last_updated_by: Anthony Sottile
+  last_updated_on: 2017-12-06 02:08:36.000000000 Z
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/ryjen/all-repos
+  detection_source: Repo Metadata
